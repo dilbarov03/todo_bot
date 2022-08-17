@@ -15,11 +15,11 @@ def command_start(update: Update, context: CallbackContext) -> None:
 
     if created:
         text = static_text.start_created.format(first_name=u.first_name)
+        
     else:
         text = static_text.start_not_created.format(first_name=u.first_name)
 
-    update.message.reply_text(text=text,
-                              reply_markup=make_keyboard_for_start_command())
+    update.message.reply_text(text=text)
 
 
 def secret_level(update: Update, context: CallbackContext) -> None:

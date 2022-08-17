@@ -1,4 +1,5 @@
 import os, django
+import pretty_errors
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'dtb.settings')
 django.setup()
